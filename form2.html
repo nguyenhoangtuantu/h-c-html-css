@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM2</title>
+  </head>
+  <body>
+    <h1>Đơn Gia Nhập Hội Fan Cưồng CLB MANCHERTER UNITED</h1>
+    <br />
+    <p>Chào các bạn đến với sân vận động oltranfot❤️❤️❤️❤️❤️❤️</p>
+    <br />
+    <form>
+      <!-- họ tên -->
+      <label for="fullname">Họ và tên(Nhập đúng vào nhé mấy em)</label>
+      <input
+        type="text"
+        id="fullname"
+        name="fullname"
+        required
+        placeholder="vd: Nguyễn Hoàng Tuấn Tú"
+        size="30"
+      />
+      <!-- cái required là cái bắt buộc phải Nhập
+       còn cái placeholder là cái gợi ý nhé  -->
+      <br /><br />
+      <!-- email -->
+      <label for="email">Email(Nhập đi ngại chi)</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="abs@gmail.com"
+        size="30"
+      />
+      <br /><br />
+      <!-- ô nhập cảm xúc đi -->
+      <label for="story"
+        >Mô tả cảm xúc của bạn khi MU chiến thắng chè xanh</label
+      ><textarea
+        name="story"
+        id="story"
+        placeholder="Gõ cảm xúc vào đây nhé"
+        rows="5"
+        cols="50"
+        spellcheck
+      ></textarea>
+      <!-- rows là hàng
+       cols là cột -->
+      <br /><br />
+      <!-- giới tính -->
+      <fieldset>
+        <legend>Giới tính của bạn là gì? khai mau không tau bắn</legend>
+        <label for="male">
+          <input type="radio" name="gender" id="male" value="male" />Nam
+        </label>
+        <br />
+        <label for="female">
+          <input type="radio" name="gender" id="female" value="female" />Nữ
+        </label>
+        <br />
+        <label for="other">
+          <input type="radio" name="gender" id="other" value="other" />Khác
+        </label>
+      </fieldset>
+      <label for="position">Bạn thích chơi vị trí nào trên sân bóng:</label>
+      <select name="position" id="position">
+        <option value="tiendao">Tiền đạo CR7</option>
+        <option value="tienve">Tiền Vệ Lâm Chấn Động</option>
+        <option value="trungve">
+          Trung vệ si lùn đá hôi thì nhiều còn ăn bám bố
+        </option>
+        <option value="thumon">Thủ môn</option>
+      </select>
+      <br /><br />
+      <!-- Mức độ fan cuồng -->
+      <label for="fan-level"
+        >Mức độ fan cuồng của bạn(1 đến 10)
+        <input
+          type="number"
+          id="fan-level"
+          name="fan-level"
+          min="1"
+          max="10"
+          step="1"
+      /></label>
+      <br /><br />
+      <label for="love-player">Cầu thủ yêu thích nhất: </label>
+      <input type="text" id="love-player" name="love-player" list="players" />
+      <datalist id="players">
+        <option value="Messi"></option>
+        <option value="Cr7"></option>
+        <option value="neymal"></option>
+        <option value="mp3"></option>
+        <option value="lukaku"></option>
+      </datalist>
+      <!-- cam kết -->
+      <p><b>Ban có cam kết khi MU đá ngu chưa</b></p>
+      <label for="agree">Tôi cam kết</label>
+      <input type="checkbox" name="agree" id="agree" />
+      <!-- nút  - button -->
+      <button type="submit">Gửi đơn nhanh thằng chó</button>
+      <button type="reset">
+        Xóa hết cảm xúc, con mẹ mày ko nhấn gửi đơn đi
+      </button>
+    </form>
+  </body>
+</html>
